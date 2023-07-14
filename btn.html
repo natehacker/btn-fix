@@ -1,0 +1,536 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title></title>
+<meta name="description" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script src="https://kit.fontawesome.com/b5ec3bd5fd.js" crossorigin="anonymous"></script>
+
+<style>
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+/* End of CSS Reset Code */
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #003479;
+    
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003479;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #555;
+    padding-bottom: 15px;
+}
+
+.main-container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.intro-paras {
+    padding: 0px 18px;
+}
+
+
+.intro-paras p {
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: left;
+}
+
+
+.intro-paras li {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.75em;
+    color: #555;
+    
+}
+
+.intro-paras ul {
+    padding: 0px 100px;
+}
+
+.full-report p {
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    text-align: left;
+}
+
+.individual-highlights p {
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    text-align: left;
+}
+
+.table-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 1.2em;
+
+}
+.letter-headline {
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+ .btn-linked {
+     border-radius: 8px;
+     padding: 25px;
+     background-color: #639ec8;
+     border: none;
+     color: #fff;
+     font-size: 1.2em;
+     font-weight: bold;
+     cursor: pointer;
+     
+ }
+
+ .btn-linked:hover {
+  
+  background-color: #003479;
+
+  
+}
+
+ .btn-linked-v2 {
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #639ec8;
+  border: none;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-linked-v3 {
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #639ec8;
+  border: none;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-linked-v2:hover {
+  background-color: #003479;
+}
+
+.btn-unique {
+  width: 49%;
+}
+
+ .btn-linked-v2 i {
+     padding-right: 15px;
+ }
+
+ .btn-linked-v3 i {
+     padding-left: 15px;
+ }
+  
+ a {
+   text-decoration: none;
+ }
+
+  .odd-list-item:hover {
+  background-color: #003479;
+  cursor: pointer;
+ }
+
+ .even-list-item:hover {
+  background-color: #003479;
+  cursor: pointer;
+ }
+
+ .odd-list-item button {
+   margin-right: 15px;
+ }
+
+ 
+.odd-list-item {
+  background-color: #639ec8;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+.even-list-item {
+  background-color: #555;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+.letters-list {
+  margin-bottom: 25px;
+}
+
+.two-col-container {
+   display: flex;
+   margin-bottom: 15px;
+}
+
+.full-report {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 18px;
+  
+}
+
+.individual-highlights {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 18px;
+}
+
+.letter-headline h2 {
+  text-align: center;
+}
+
+
+
+
+/* End of responsive CSS rules */
+
+@media only screen and (max-width: 800px) {
+  
+
+  .main-container {
+    display: table;
+    width: 90%;
+    padding: 0px 45px;
+  }
+
+  .main-container > .inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .intro-paras p {
+    padding: 0px 40px;
+    
+}
+
+.headline-spacing {
+    padding: 0px 18px;
+}
+
+
+  .banner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-bottom: 35px;
+    
+    
+}
+
+.two-col-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-report {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.individual-highlights {
+  width: 100%;
+}
+
+.secondary-nav-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropbtn {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dropbtn-v2 {
+    width: 98%;
+}
+
+}
+
+
+/* Beginning of media < 500px */
+
+@media only screen and (max-width: 500px) {
+  .btn-unique {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+ .main-container {
+    width: 100%;
+  }
+
+  .intro-paras p {
+    padding: 0px;
+    font-size: 1em;
+  }
+
+  .btn-linked {
+    width: 100%;
+    font-size: 1em;
+  }
+  
+   .btn-linked-v2 {
+    font-size: 1em;
+    
+  }
+  
+  h2 {
+      font-size: 1.2em;
+  }
+
+}
+
+
+/* End of media < 500px */
+</style>
+
+
+
+
+<div class="main-container">
+
+    <div class="inner-container">
+
+
+
+        <div class="banner">
+            <img src="https://www.cste.org/resource/resmgr/occupationalhealth/oh-overview-banner.jpg" alt="Occupational Health Overview" width="100%" />
+
+        </div>
+        <!---End of Banner-->
+
+
+        <!----START OF Summary Section----->
+
+        <br />
+        <div class="intro-paras">
+            <p>
+                Occupational injuries and illnesses are significant but preventable public health problems. Occupational health surveillance provides essential information to inform research priorities, target and design prevention activities, and monitor progress in
+                meeting prevention goals. The Occupational Health Surveillance Subcommittee serves as an important vehicle for ongoing communication between NIOSH, other federal and non-federal partners, and the states.
+            </p>
+
+            <p>
+                CSTE, in collaboration with NIOSH, has worked to increase state-based occupational health surveillance capacity. These efforts have included defining the role of states in a nationwide occupational health surveillance system, outlining guidelines for
+                minimum and comprehensive state-based occupational health activities, developing a set of occupational health indicators to provide information about a population’s health status with respect to workplace injury and illness, and providing
+                technical assistance to states with little occupational health surveillance capacity.
+            </p>
+
+            <p>
+                If you are interested in becoming more involved in occupational health with CSTE, please click the topics below – we welcome your involvement!
+            </p>
+
+        </div>
+        <!--- End of intro-paras-->
+
+        <br /> <br />
+
+        <div class="letter-headline">
+
+            <h2>Overview Quick Links</h2>
+
+        </div>
+        <!--- End of letter-headline-->
+
+        <br /> <br />
+
+        <!------END OF Subcommittee Contact------>
+
+        <div class="fastlane-section">
+
+            <div class="two-col-container">
+
+
+                <div class="full-report">
+                   
+                        <a href="http://cste.site-ym.com/members/group.aspx?id=150859%20" target="_blank"> Occupational Health</a>
+                    
+                   
+            <!-- <i class="fas fa-table"></i> Occupational Health: BRFSS -->
+            
+          
+
+                    <a href="https://www.cste.org/page/ohi-home" target="_blank">
+            <button class="btn-linked-v2">
+            <i class="fas fa-table"></i> Occupational Health Indicators
+            </button>
+          </a>
+
+                    <a href="https://www.cste.org/page/oh-successstories" target="_blank">
+            <button class="btn-linked-v2">
+            <i class="fas fa-table"></i> Occupational Health Success Stories
+            </button>
+          </a>
+
+                    <a href="https://www.cste.org/group/OHWebsites" target="_blank">
+            <button class="btn-linked-v2">
+            <i class="fas fa-table"></i> State Occupational Health Websites
+            </button>
+          </a>
+
+                    <a href="https://www.cste.org/?OHPublications" target="_blank">
+            <button class="btn-linked-v2">
+            <i class="fas fa-table"></i> Occupational Health Publications
+            </button>
+          </a>
+
+                </div>
+                <!---End of Full-Report-->
+
+                <div class="individual-highlights">
+
+                    <a href="/group/OHCountthemall" target="_blank"><button class="btn-linked-v2"><i class="fas fa-table"></i> Occupational Health: Count Them All</button></a>
+
+                    <a href="/group/Partnerships" target="_blank"><button class="btn-linked-v2"><i class="fas fa-file-pdf"></i> Occupational Health: Partnerships</button></a>
+
+                    <a href="/group/WestON" target="_blank"><button class="btn-linked-v2"><i class="fas fa-file-pdf"></i> Occupational Health: WestON</button></a>
+
+                    <a href="/group/OHResources" target="_blank"><button class="btn-linked-v2"><i class="fas fa-file-pdf"></i> Resources</button></a>
+
+                    <a href="https://www.cste.org/page/OHNewsletters" target="_blank"><button class="btn-linked-v2"><i class="fas fa-file-pdf"></i> Newsletters</button></a>
+
+                </div>
+                <!---End of Full-Report-->
+
+            </div>
+            <!----End of Two-Col-Container-->
+
+            <a href="https://www.cste.org/resource/resmgr/occupationalhealth/OHI_GuidanceManual_2018_FINA.pdf" target="_blank"><button class="btn-linked-v2"><i class="fas fa-file-pdf"></i> OHI: A Guide for Tracking Occupational Health Conditions and Their Determinants</button></a>
+
+
+
+        </div>
+        <!---End of Fastlane-Section--->
+        <br /> <br />
+
+        <div class="letter-headline">
+
+            <h2>Subcommittee Contact</h2>
+
+        </div>
+        <!--- End of letter-headline-->
+
+        <br />
+
+        <div class="intro-paras">
+
+            <p>
+                For more information about Occupational Health Subcomittee and its activities, please contact <a href="mailto:CLingwalle@cste.org"><u>Cailyn Lingwall</u></a>.
+            </p>
+
+        </div>
+        <!--- End of intro-paras-->
+
+    </div>
+    <!----End of inner-container-->
+
+</div>
+<!---End of Main-Container-->

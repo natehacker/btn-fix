@@ -52,14 +52,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
+
 
 
 /* End of CSS Reset Code */
@@ -451,36 +444,41 @@ h4 {
 
                 <div class="full-report">
                    
-                        <a href="http://cste.site-ym.com/members/group.aspx?id=150859%20" target="_blank"> Occupational Health</a>
+                        <!-- <a href="http://cste.site-ym.com/members/group.aspx?id=150859%20" target="_blank"> Occupational Health</a> -->
+                        <button class="btn-linked-v2" onclick="myFunctiona()">Occupational Health:BRFSS</button>
+
                     
                    
             <!-- <i class="fas fa-table"></i> Occupational Health: BRFSS -->
             
           
+            <button class="btn-linked-v2" onclick="myFunction0()">Occupational Health Indicators</button>
+           
 
-                    <a href="https://www.cste.org/page/ohi-home" target="_blank">
-            <button class="btn-linked-v2">
-            <i class="fas fa-table"></i> Occupational Health Indicators
-            </button>
-          </a>
-
-                    <a href="https://www.cste.org/page/oh-successstories" target="_blank">
+                    <!-- <a href="https://www.cste.org/page/oh-successstories" target="_blank">
             <button class="btn-linked-v2">
             <i class="fas fa-table"></i> Occupational Health Success Stories
             </button>
-          </a>
 
-                    <a href="https://www.cste.org/group/OHWebsites" target="_blank">
+          </a> -->
+
+          <button class="btn-linked-v2" onclick="myFunction1()">Occupational Health Success Stories</button>
+
+                    <!-- <a href="https://www.cste.org/group/OHWebsites" target="_blank">
             <button class="btn-linked-v2">
             <i class="fas fa-table"></i> State Occupational Health Websites
             </button>
-          </a>
+          </a> -->
+          <button class="btn-linked-v2" onclick="myFunction2()">State Occupational Health Websites</button>
 
-                    <a href="https://www.cste.org/?OHPublications" target="_blank">
+
+                    <!-- <a href="https://www.cste.org/?OHPublications" target="_blank">
             <button class="btn-linked-v2">
             <i class="fas fa-table"></i> Occupational Health Publications
             </button>
-          </a>
+          </a> -->
+
+          <button class="btn-linked-v2" onclick="myFunction3()">Occupational Health Publications</button>
 
                 </div>
                 <!---End of Full-Report-->
@@ -533,4 +531,26 @@ h4 {
     <!----End of inner-container-->
 
 </div>
+
+<script>
+
+function myFunctiona() {
+  location.replace("http://cste.site-ym.com/members/group.aspx?id=150859%20")
+}
+
+
+  function myFunction0() {
+  location.replace("https://www.cste.org/page/ohi-home")
+}
+
+function myFunction1() {
+  location.replace("https://www.cste.org/page/oh-successstories")
+}
+function myFunction2() {
+  location.replace("https://www.cste.org/group/OHWebsites")
+}
+function myFunction3() {
+  location.replace("https://www.cste.org/?OHPublications")
+}
+  </script>
 <!---End of Main-Container-->

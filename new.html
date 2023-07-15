@@ -1,0 +1,545 @@
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title></title>
+<meta name="description" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<script src="https://kit.fontawesome.com/b5ec3bd5fd.js" crossorigin="anonymous"></script>
+
+<style>
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: Arial, Helvetica, sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* End of CSS Reset Code */
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #003479;
+    
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #003479;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.main-container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+
+.intro-paras p {
+    padding: 0px 20px;
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    text-align: left;
+}
+
+.full-report p {
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    text-align: left;
+}
+
+.individual-highlights p {
+    line-height: 1.75em;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    text-align: left;
+}
+
+.table-text {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+    color: #555;
+    font-size: 1.2em;
+
+}
+.letter-headline {
+    background-color: #f1f1f1;
+    padding: 30px;
+}
+
+ .btn-linked {
+     border-radius: 8px;
+     padding: 25px;
+     background-color: #639ec8;
+     border: none;
+     color: #fff;
+     font-size: 1.2em;
+     font-weight: bold;
+     cursor: pointer;
+     
+ }
+
+ .btn-linked:hover {
+  
+  background-color: #003479;
+
+  
+}
+
+ .btn-linked-v2 {
+  border-radius: 8px;
+  padding: 25px;
+  background-color: #639ec8;
+  border: none;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-linked-v2 i {
+    padding-right: 10px;
+}
+
+.btn-linked-v2:hover {
+  background-color: #003479;
+}
+
+.btn-unique {
+  width: 49%;
+}
+
+ a {
+   text-decoration: none;
+ }
+
+  .odd-list-item:hover {
+  background-color: #003479;
+  cursor: pointer;
+ }
+
+ .even-list-item:hover {
+  background-color: #003479;
+  cursor: pointer;
+ }
+
+ .odd-list-item button {
+   margin-right: 15px;
+ }
+
+ 
+.odd-list-item {
+  background-color: #639ec8;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+.even-list-item {
+  background-color: #555;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+.letters-list {
+  margin-bottom: 25px;
+}
+
+.two-col-container {
+   display: flex;
+   margin-bottom: 15px;
+}
+
+.full-report {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 18px;
+  
+}
+
+.individual-highlights {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0px 18px;
+}
+
+.letter-headline h2 {
+  text-align: center;
+}
+
+
+/* Quick Links Button Styles */
+
+.dropbtn {
+              background-color:  #003479;
+              color: white;
+              padding: 60px;
+              font-size: 1.2em;
+              border: none;
+              cursor: pointer;
+              border-radius: 8px;
+              margin-right: 15px;
+              font-weight: bold;
+              width: 30%;
+            }
+
+            .dropbtn-v2 {
+                width: 96%;
+            }
+            
+            .dropbtn:hover, .dropbtn:focus {
+              background-color: #639ec8;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+
+            .dropbtn i {
+              display: block;
+              margin-bottom: 15px;
+            }
+            
+            .dropdown-content {
+                
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 19%;
+                overflow: auto;
+                box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+                z-index: 1;
+                
+            }
+            
+            .dropdown-content a {
+              color: #555;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              
+            }
+
+            .dropdown-content li {
+                list-style-type: none;
+                text-align: center;
+            }
+            
+            .dropdown a:hover {background-color: #ddd;}
+            
+            .show {
+                display: flex;
+                flex-direction: column;
+                width: 34%;
+                
+            }
+
+            .secondary-nav {
+                max-width: 1190px;
+                margin-bottom: 35px;
+            }
+
+            .secondary-nav-inner {
+                display: flex;
+                justify-content: center;
+                
+            }
+
+            .show a:hover {
+                color: #fff;
+                background-color: #003479;
+            }
+
+            .three-buckets {
+                margin-bottom: 50px;
+            }
+            
+            .anchor-override a {
+                color: #fff;
+            }
+            
+            .anchor-override a:hover {
+                color: #fff;
+            }
+
+/* End of Quick Links Button Styles */
+
+
+
+/* End of responsive CSS rules */
+
+@media only screen and (max-width: 800px) {
+  
+
+  .main-container {
+    display: table;
+    width: 90%;
+    padding: 0px 45px;
+  }
+
+  .main-container > .inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  .intro-paras p {
+    padding: 0px 40px;
+    
+}
+
+
+  .banner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-bottom: 35px;
+    
+    
+}
+
+.two-col-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.full-report {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.individual-highlights {
+  width: 100%;
+}
+
+.secondary-nav-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropbtn {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dropbtn-v2 {
+    width: 98%;
+}
+
+}
+
+
+/* Beginning of media < 500px */
+
+@media only screen and (max-width: 500px) {
+  .btn-unique {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .table-text {
+    font-size: 1em;
+  }
+
+  th {
+    font-size: 1.2em;
+  }
+  
+ .main-container {
+    width: 100%;
+  }
+
+  .intro-paras p {
+    padding: 0px;
+    font-size: 1em;
+  }
+
+  .btn-linked {
+    width: 100%;
+    font-size: 1em;
+  }
+  
+   .btn-linked-v2 {
+    font-size: 1em;
+    
+  }
+  
+  h2 {
+      font-size: 1.2em;
+  }
+
+}
+
+
+/* End of media < 500px */
+</style>
+
+
+
+
+<div class="main-container">
+
+    <div class="inner-container">
+
+
+        <!----Beginning of Background Section----->
+
+        <div class="letter-headline">
+
+            <h2>Occupational Health: Partnerships</h2>
+
+        </div>
+        <!--- End of letter-headline-->
+
+        <br />
+
+        <div class="intro-paras">
+
+            <p>
+                Enhancing Partnerships between OSHA and State Public Health Agencies with the passage of the OSHAct in 1970, the lead responsibility for regulating workplace health and safety conditions was entrusted to federal OSHA and state labor departments. While
+                regulatory agencies have the central role in protecting workers’ health, the enforcement of workplace health and safety regulations, compliance assistance, and worker training are only several components of a comprehensive approach to
+                workplace health and safety. State public health agencies have critical and complementary roles to play in using data sources for surveillance of work-related diseases and injuries, applying epidemiologic skills to investigate occupational
+                health problems in the community, working with the medical community to increase their involvement in workplace health and safety, and integrating worker health into other public health-based prevention activities. Public health agencies
+                may play a particularly important role in addressing the occupational health needs of underserved worker populations, such as immigrant and minority workers, who comprise a significant proportion of our increasingly diverse workforce.
+            </p>
+
+        </div>
+        <!--- End of intro-paras-->
+
+
+
+
+        <!----End of Background Section----->
+
+
+        <!----START OF Summary Section----->
+
+        <br />
+
+        <div class="letter-headline">
+
+            <h2>Resources</h2>
+
+        </div>
+        <!--- End of letter-headline-->
+
+        <br />
+
+        <div class="fastlane-section">
+
+            <div class="two-col-container">
+
+                <div class="full-report">
+
+                    <a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/OccupationalHealth/CSTEOSHAMeetingSummaryKRTD21.pdf" target="_blank"><button class="btn-linked-v2"><i class="fas fa-file-pdf"></i>Enhancing Partnerships between OSHA and State Public Health Agencies </button></a>
+                    <a href="https://www.cste.org/members/group.aspx?id=163156" target="_blank"><button class="btn-linked-v2"><i class="fas fa-file-pdf"></i>Southeastern States Occupational Network</button></a>
+                </div>
+                <!---End of Full-Report-->
+
+                <div class="individual-highlights">
+
+                    <a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/OccupationalHealth/OSHAreferral922011.pdf" target="_blank"><button class="btn-linked-v2"><i class="fas fa-file-pdf"></i> Public Health Referrals to the Occupational Safety and Health Administration (OSHA)</button></a>
+                    <a href="https://www.cste.org/group/OHOverview" target="_blank"><button class="btn-linked-v2"><i class="fas fa-table"></i> Other Occupational Health Activities</button></a>
+                </div>
+                <!---End of Full-Report-->
+
+
+
+            </div>
+            <!----End of Two-Col-Container-->
+
+
+        </div>
+        <!---End of Fastlane-Section--->
+
+
+        <div class="intro-paras">
+
+            <p>
+                For more information about partnerships, please contact <a href="mailto:clingwall@cste.org?subject=Occupational Health Partnerships Question">Cailyn Lingwall</a>.
+            </p>
+
+        </div>
+        <!--- End of intro-paras-->
+
+        <!----END OF Summary Section-->
+
+
+    </div>
+    <!----End of inner-container-->
+
+</div>
+<!---End of Main-Container-->

@@ -1,0 +1,451 @@
+<style>
+    * {
+    }
+    p {
+    font-weight: lighter;
+    }
+    
+    body {
+    background-color: #fff;
+    }
+    h1 {
+    color: #003479;
+    font-size: 30px;
+    padding: 30px;
+    font-weight: 500;
+    }
+    .img1 {
+    text-align: center;
+    }
+    .accordion{
+    background-color: #ffffff;
+    padding: 2%;
+    
+    }
+    .panel{
+    background-color: #f3f3f3;
+    color: #0000009a;
+    cursor: pointer;
+    padding: 30px;
+    width: 90%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 3%;
+    margin-top: 5%;
+    }
+    
+    
+    
+    .container {
+    text-align: center;
+    }
+    .container_two {
+    background-color: #fcfdff;
+    width: 250px;
+    align-items: center;
+    }
+    .paragraph_two {
+    text-align: center;
+    color: #1d1c1c;
+    margin-top: 7%;
+    }
+    .container_two {
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    margin: 110px auto;
+    margin-top: 30px;
+    }
+    .container_two .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background-color: rgb(255, 254, 254);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 0px;
+    border: 2px solid black;
+    }
+    
+    .flex-container {
+    display: flex;
+    justify-content: center;
+    }
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    }
+    .flex-container > div {
+    background-color: #ffffff;
+    margin: 60px;
+    padding: 20px;
+    font-size: 30px;
+    border: 3px solid black;
+    }
+    .last_img {
+    text-align: center;
+    max-width: min-content;
+    width: 30px;
+    margin-left: 70px;
+    }
+    h2 {
+    font-family: sans-serif;
+    font-size: medium;
+    }
+    
+    #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+     margin-left: auto;
+    margin-right: auto;
+    
+    }
+    
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top:10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    }
+    #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    }
+    
+    .modal-content,
+    #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+    }
+    .modal-content {
+    margin: auto;
+    display: block;
+    width: 70%;
+    }
+    .container_three {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff;
+    display: inline;
+     flex-direction: row;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+    
+    
+    } 
+    .box1 {
+    width: 250px;
+    height: 250px;
+    background: rgb(255, 255, 255);
+    margin: 0px;
+    transition: 1s;
+    padding:20px;
+    border-radius: 10px;
+    }
+    .box1:hover {
+    transform: scale(1.1);
+    background: #9d986d;
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+    }
+    .nate {
+    width: 250px;
+    height: 250px;
+    margin-top: 00px;
+    margin-bottom: 0px;
+    margin-left:auto;
+    margin-right:auto;
+    display: inline-block;
+    
+    
+    }
+    .clicktwo {
+    width: 60px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 100px;
+    }
+    .clickthree {
+    width: 60px;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    }
+    
+    
+    
+    .close {
+    position: absolute;
+    margin-bottom: 10%;
+    right: 5%;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    }
+    .close:hover,
+    .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .accordion-item.active .accordion-content {
+    max-height: 1000px; /* or any value that fits your content */
+    transition: max-height 0.2s ease-in;
+    }
+    
+    @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+    } /* styles for all screens go here */
+    @media only screen and (max-width: 800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+    }
+    @media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+      width: 100%;
+    }
+    }
+</style>
+
+<div class="img1">
+    <img src="https://www.cste.org/resource/resmgr/standing2.png" alt="img1" />
+</div>
+<div class="container">
+    <p>The CSTE Executive Board includes three Standing Committees comprised of both Executive Board representatives and active CSTE members.</p>
+    <p>More information on the history of CSTE standing committees <a href="https://www.cste.org/page/governance" target="_blank">can be found here</a>. Click each box below for a standing committee description.</p>
+</div>
+
+<div class="container_three">
+
+
+    <div class="nate">
+        <div class="box1" style="text-align:bottom;">
+            <button class="accordion1" style="background-color: #ffffff;width: 100%; border: 2px solid black;border-radius: 30px;"><img src="https://www.cste.org/resource/resmgr/Fa.png" alt="img" width="180px" style="margin-left: px; border-radius: 10px;" /></button>
+        </div>
+    </div>
+
+
+    <div class="nate">
+        <div class="box1" style="text-align:bottom;">
+            <button class="accordion2" style="background-color: #ffffff;width: 100%; border: 2px solid black;border-radius: 30px;"><img src="https://www.cste.org/resource/resmgr/gn.png" alt="img" width="180px" style="margin-left: px; border-radius: 10px;" /></button>
+        </div>
+    </div>
+
+
+    <div class="nate">
+        <div class="box1" style="text-align:bottom;">
+            <button class="accordion3" style="background-color: #ffffff;width: 100%; border: 2px solid black;border-radius: 30px;"><img src="https://www.cste.org/resource/resmgr/pp.png" alt="img" width="180px" style="margin-left: px; border-radius: 10px;" /></button>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="panel" id="panel1">
+    <div class="accordion-header">
+        <h1 style="color: black; text-align: left; margin-top: 20px;">Finance and Audit Committee</h1>
+        <p style="margin-bottom:3%; text-align: left;">The Finance and Audit (F&amp;A) Standing Committee oversees the financial activities of CSTE, including engaging an independent, certified public accounting firm and ensures that internal controls are in place to protect assets. Membership of
+            the F&amp;A Committee is comprised of at least three Executive Board members and an independent consultant</p>
+        <strong style="margin-top: 10px; margin:right5%;"> Chair: Ruth Lynfield,MD; CSTE Secretary-Treasurer, State Epidemiologist and Medical Director, Minnesota Department of Health 
+
+
+        </strong>
+        <p>Under the P&amp;P Standing Committee, the bylaws support the formation of Ad Hoc Committees, which include Steering Committees. Subcommittees are formed <br />under each Steering Committee. The image below highlights how CSTE’s standing committees
+            will function in the updated governance structure.<br />
+        </p>
+    </div>
+</div>
+<div class="panel" id="panel2" style="display: block;">
+    <div class="accordion-header">
+        <h1 style="color: black; text-align: left; margin-top: 20px;">Governance and Nominating Committee</h1>
+        <p style="margin-bottom:3%; text-align: left;">The Governance and Nominating (G&amp;N) Standing Committee ensures compliance with CSTE’s Articles of Incorporation and CSTE Bylaws. This committee recruits and presents candidates for election or replacement to the Executive Board. Membership
+            of G&amp;N Committee is comprised of at least four Executive Board members and active members. The Governance and Nominating Committee shall have a nominating subcommittee comprising two Executive Board members from the Governance and Nominating
+            Committee and four non-Executive Board members selected from the active members. The Nominating Subcommittee shall solicit nominations and identify two but not more than four candidates per open position and recommend a final slate to the
+            Governance and Nomination Committee and the Executive Board.</p>
+        <strong style="margin-top: 10px; margin:right5%;">Chair:Sarah Lyon-Callos <a href="Sarah Lyon-Callo"></a>, MA, MS, PhD; CSTE President-Elect; State Epidemiologist, Michigan
+               </strong>
+        <p>Under the P&amp;P Standing Committee, the bylaws support the formation of Ad Hoc Committees, which include Steering Committees. Subcommittees are formed under each Steering Committee. The image below highlights how CSTE’s standing committees will
+            function in the updated governance structure.<br />
+        </p>
+    </div>
+</div>
+<div class="panel" id="panel3">
+    <div class="accordion-header">
+        <strong></strong>
+        <h1 style="color:black; text-align: left;">Program and Policy (P&amp;P) Committee</h1>
+        <p style="padding-bottom: 2%;">The Program and Policy (P&amp;P) Committee oversees and advises on the various programmatic and policy development activities of the organization. The P&amp;P Committee ensures coordination and communication across P&amp;P Steering, Ad Hoc, and
+            Subcommittees and adjudicates priority and emerging issues of importance to the Executive Board in a timely manner. The P&amp;P Committee also guides CSTE consensus development processes, including position statements, briefs, letters, public
+            comments, etc. The P&amp;P Committee, in coordination with the Executive Board, establishes and/or abolishes Steering, Ad Hoc, and Subcommittees. Membership consists of 3-5 Executive Board members, Steering Committee Chairs and Vice Chairs,
+            and Ad Hoc Committee Chairs. All P&amp;P Committee members are active CSTE members, working at a state, tribal, local, and territorial (STLT) health agency with current membership status. In September 2022, the CSTE Executive Board approved
+            a revised interim Steering Committee Structure, which includes six Steering Committees and many Subcommittees. The P&amp;P Committee may add additional Steering Committees to support other priority programmatic areas in the future. The following
+            subcommittees – Health Equity, Tribal Epi, Public Health Law, Border and International Health, and Public Health Emergency Preparedness – are not yet assigned to a Steering Committee and during this interim phase, will report directly to the
+            P&amp;P Chair. Once leadership for the P&amp;P Committee is in place in early 2023, the Committee will address how best to incorporate these subcommittees into the new structure.</p>
+        <strong>Chair:<a href="https://www.cste.org/general/custom.asp?page=standingcommittees"> Sherri Davidson</a> PhD, MPH; EB Member-at-Large; State Epidemiologist, Alabama
+                     </strong>
+        <p>Under the P&amp;P Standing Committee, the bylaws support the formation of Ad Hoc Committees, which include Steering Committees. Subcommittees are formed under each Steering Committee. The image below highlights how CSTE’s standing committees will
+            function in the updated governance structure.
+        </p>
+    </div>
+</div>
+
+
+
+
+<div class="paragraph_two">
+    <p>Under the P&amp;P Standing Committee, the bylaws support the formation of Ad Hoc Committees, which include Steering Committees. Subcommittees are formed</p>
+    <p>under each Steering Committee. The image below highlights how CSTE’s standing committees will function in the updated governance structure.
+    </p>
+</div>
+<p>
+
+    <img alt="" id="myImg" src="https://www.cste.org/resource/resmgr/newstand.png" style="width:100%;max-width:1000px;" /></p>
+
+<div id="myModal" class="modal">
+    <span class="close">×</span>
+    <img alt="" class="modal-content" id="img01" />
+    <div id="caption">&nbsp;</div>
+</div>
+<div>
+    <h2 style="text-align: left; margin-left: 40px;"><strong>P&amp;P Resources</strong></h2>
+</div>
+
+<ul style="margin-left: 40px;">
+    <a href="#"></a>
+    <li style="text-align: left;"><a href="#">More information on recent updates to CSTE Steering Committees and Subcommittees</a>
+    </li>
+    <a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/policyprogram/p&amp;p_committee_faqs_v1.0.pdf" target="_blank"></a>
+    <li style="text-align: left;"><a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/policyprogram/p&amp;p_committee_faqs_v1.0.pdf" target="_blank">Frequently Asked Questions (FAQs)</a>
+    </li>
+    <a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/policyprogram/steering_committee_chair_rol.pdf" target="_blank"></a>
+    <li style="text-align: left;"><a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/policyprogram/steering_committee_chair_rol.pdf" target="_blank">Steering Committee Chair and Vice Chair Roles and Responsibilities</a>
+    </li>
+    <a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/policyprogram/steering_committee_chair_rol.pdf" target="_blank"></a>
+    <li style="text-align: left;"><a href="https://www.cste.org/resource/resmgr/Subcommittee_and_Workgroup_L.pdf" target="_blank">Subcommittee and Workgroup leadership roles and responsibilities</a>
+    </li>
+    <li style="font-weight: lighter; text-align: left;">CSTE Program and Policy Committee Membership Briefing, October 2022</li>
+    <a href="#"></a>
+    <dd style="text-align: left; margin-left: 40px;"><a>Webinar recording</a></dd>
+    <dd style="text-align: left; margin-left: 40px;"><a href="https://cdn.ymaws.com/www.cste.org/resource/resmgr/standingcommittee/P&amp;P_Update_for_CSTE_Members_.pdf" target="_blank">Presentation slides</a></dd>
+
+    <p style="text-align: left;">To contact the Program &amp; Policy Committee, please email <a>programandpolicy@cste.org.</a> To view all of CSTE’s current Steering Committees and Subcommittees,<br /> visit the “Committee” menu.<br />
+    </p>
+</ul>
+
+<script>
+    var modal = document.getElementById("myModal");
+            var img = document.getElementById("myImg");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            var span = document.getElementsByClassName("close")[0];
+            span.onclick = function() { 
+              modal.style.display = "none";
+            }
+    
+            function myFunction(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+      // define function to hide all panels
+    function hidePanels() {
+      panel1.style.display = "none";
+      panel2.style.display = "none";
+      panel3.style.display = "none";
+    }
+    
+    // get references to panels and accordions
+    var panel1 = document.getElementById("panel1");
+    var panel2 = document.getElementById("panel2");
+    var panel3 = document.getElementById("panel3");
+    var acc1 = document.getElementsByClassName("accordion1");
+    var acc2 = document.getElementsByClassName("accordion2");
+    var acc3 = document.getElementsByClassName("accordion3");
+    
+    // hide all panels initially
+    hidePanels();
+    
+    // add event listeners to accordions
+    for (i = 0; i < acc1.length; i++) {
+      acc1[i].addEventListener("click", function() {
+        // toggle active class on clicked accordion
+        this.classList.toggle("active");
+        // hide all panels
+        hidePanels();
+        // show panel1 if accordion1 is active
+        if (this.classList.contains("active")) {
+          panel1.style.display = "block";
+        }
+      });
+    }
+    for (i = 0; i < acc2.length; i++) {
+      acc2[i].addEventListener("click", function() {
+        // toggle active class on clicked accordion
+        this.classList.toggle("active");
+        // hide all panels
+        hidePanels();
+        // show panel2 if accordion2 is active
+        if (this.classList.contains("active")) {
+          panel2.style.display = "block";
+        }
+      });
+    }
+    for (i = 0; i < acc3.length; i++) {
+      acc3[i].addEventListener("click", function() {
+        // toggle active class on clicked accordion
+        this.classList.toggle("active");
+        // hide all panels
+        hidePanels();
+        // show panel3 if accordion3 is active
+        if (this.classList.contains("active")) {
+          panel3.style.display = "block";
+        }
+      });
+    }
+</script>
